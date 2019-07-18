@@ -19,7 +19,11 @@ class Question extends Component {
                     </div>
                     <Row>
                         <Col span={6} offset={6}>
-                            <div style={{ cursor: 'pointer' }} onClick={!answer ? () => this.handleAnswer(authedUser, question.id, 'optionOne') : ()=>{}}>{question.optionOne.text}</div>
+                            <div style={{ cursor: 'pointer' }} onClick={
+                                !answer
+                                    ? () => this.handleAnswer(authedUser, question.id, 'optionOne')
+                                    : ()=>{}}>{question.optionOne.text}
+                                    </div>
                             { answer === 'Option One' &&
                             <React.Fragment>
                                 <div>Percentage: {`${percentage}%`}</div>
@@ -28,7 +32,11 @@ class Question extends Component {
                             }
                         </Col>
                         <Col span={6} offset={3}>
-                            <div style={{ cursor: 'pointer' }} onClick={!answer ? () => this.handleAnswer(authedUser, question.id, 'optionTwo') : ()=>{}}>{question.optionTwo.text}</div>
+                            <div style={{ cursor: 'pointer' }} onClick={
+                                !answer
+                                    ? () => this.handleAnswer(authedUser, question.id, 'optionTwo')
+                                    : ()=>{}}>{question.optionTwo.text}
+                                    </div>
                             { answer === 'Option Two' &&
                             <React.Fragment>
                                 <div>Percentage: {`${percentage}%`}</div>
