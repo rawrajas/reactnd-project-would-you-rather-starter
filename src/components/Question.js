@@ -15,7 +15,7 @@ class Question extends Component {
                 <div>
                     <div style={{ textAlign: 'center', marginTop: '50px' }}>
                         <Avatar shape="square" size="large" src={authorAvatar} />
-                        <h3> Would You Rather </h3>
+                        <h3> Would You Rather...? </h3>
                     </div>
                     <Row>
                         <Col span={6} offset={6}>
