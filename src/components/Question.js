@@ -15,15 +15,11 @@ class Question extends Component {
                 <div>
                     <div style={{ textAlign: 'center', marginTop: '50px' }}>
                         <Avatar shape="square" size="large" src={authorAvatar} />
-                        <h3> Would You Rather...? </h3>
+                        <h3> Would You Rather </h3>
                     </div>
                     <Row>
                         <Col span={6} offset={6}>
-                            <div style={{ cursor: 'pointer' }} onClick={
-                                !answer
-                                    ? () => this.handleAnswer(authedUser, question.id, 'optionOne')
-                                    : ()=>{}}>{question.optionOne.text}
-                                    </div>
+                            <div style={{ cursor: 'pointer' }} onClick={!answer ? () => this.handleAnswer(authedUser, question.id, 'optionOne') : ()=>{}}>{question.optionOne.text}</div>
                             { answer === 'Option One' &&
                             <React.Fragment>
                                 <div>Percentage: {`${percentage}%`}</div>
@@ -32,11 +28,7 @@ class Question extends Component {
                             }
                         </Col>
                         <Col span={6} offset={3}>
-                            <div style={{ cursor: 'pointer' }} onClick={
-                                !answer
-                                    ? () => this.handleAnswer(authedUser, question.id, 'optionTwo')
-                                    : ()=>{}}>{question.optionTwo.text}
-                                    </div>
+                            <div style={{ cursor: 'pointer' }} onClick={!answer ? () => this.handleAnswer(authedUser, question.id, 'optionTwo') : ()=>{}}>{question.optionTwo.text}</div>
                             { answer === 'Option Two' &&
                             <React.Fragment>
                                 <div>Percentage: {`${percentage}%`}</div>
